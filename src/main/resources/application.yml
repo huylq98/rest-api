@@ -5,9 +5,13 @@ spring:
     pathmatch:
       matching-strategy: ant_path_matcher
   redis:
-    host: localhost
+    host: redis
     port: 6379
-
 springdoc:
   swagger-ui:
     path: /swagger-ui
+logging:
+  level:
+    org:
+      springframework:
+        cache: TRACE
